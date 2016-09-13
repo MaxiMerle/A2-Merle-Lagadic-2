@@ -57,17 +57,15 @@ SUMMARY
 		$email -> 			field value : email
 		$password -> 		field value : password
 	*/
-	function userConnection(PDO $db, $name, $email, $password){
+	function userConnection(PDO $db, $email, $password){
 		if(!empty($email) && !empty($password)){
 			//Requête SQL
 			$sql = "SELECT * FROM users WHERE email = :email AND password = :password LIMIT 1";
 
 			$req = $db->prepare($sql);
 			$req->execute(array(
-				':name' => $name
 				':email' => $email,
 				':password' => $password
-
 			));
 
 			$result = $req->fetch(PDO::FETCH_ASSOC);
@@ -77,7 +75,6 @@ SUMMARY
 				
 				//on définit la SESSION
 				$_SESSION['id'] = $result['id'];
-				$_SESSION['name'] = $result['name'];
 				$_SESSION['username'] = $result['username'];
 				$_SESSION['email'] = $result['email'];
 				$_SESSION['created_at'] = $result['created_at'];
@@ -86,12 +83,10 @@ SUMMARY
 				return true;
 			}else{
 				return false;
-				echo '"Mauvais identifiants'
 			}
 		}else{
 
 			return false;
-			echo '"Mauvais identifiants'
 		}
 	}
 
