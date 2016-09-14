@@ -1,16 +1,16 @@
+
 <?php session_start();
-/******************************** 
-	 DATABASE & FUNCTIONS 
-********************************/
+
 require('config/config.php');
 require('model/functions.fn.php');
-/********************************
-			PROCESS
-********************************/
+
+
+
+
 if(isset($_POST['email']) && isset($_POST['password'])){
 	if(!empty($_POST['email']) && !empty($_POST['password'])){
-		$hashh = md5($_POST['password']);
-		$userc = userConnection($db, $_POST['email'], $hashh);
+		
+		$userc = userConnection($db, $_POST['email'], $_POST['password']);
 		if ($userc){
 			header('Location: dashboard.php');
 		}
