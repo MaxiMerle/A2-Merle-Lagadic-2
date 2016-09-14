@@ -12,8 +12,8 @@ if ((!$MailCheck) || (!$NameCheck)){
 }
 elseif(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && 
 	!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password'])) {
-	$hash = md5($_POST['password']);
-	userRegistration($db, $_POST['username'], $_POST['email'], $hash);
+	
+	userRegistration($db, $_POST['username'], $_POST['email'], $_POST['password'] );
 	$_SESSION['message'] = 'Merci de votre inscription ! Vous pouvez désormais vous connecter.';
 	header('Location: login.php');
 }
