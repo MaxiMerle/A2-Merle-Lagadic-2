@@ -11,8 +11,8 @@
 				<h1><i class="fa fa-soundcloud"></i> Connectez-vous !</h1>
 				<form method="POST" action="login.php">
 				<div class="form-input">
-						<span class="name">
-							<input type="text" name="name" placeholder="Name">
+						<span class="username">
+							<input type="text" name="username" placeholder="Username">
 						</span>
 					</div>
 					<div class="form-input">
