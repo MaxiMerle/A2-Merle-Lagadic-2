@@ -11,14 +11,14 @@ require('model/functions.fn.php');
 			PROCESS
 ********************************/
 
-if(isset($_POST['email']) && isset($_POST['password'])){
+if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])){
 	if(!empty($_POST['email']) && !empty($_POST['password'])){
 
 
 
 		userConnection($db, $_POST['email'], $_POST['password']);
 		
-		header('Location: dashboard.php');
+		header('Location: login.php');
 
 	}else{
 		$error = 'Champs requis !';
