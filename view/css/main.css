@@ -186,6 +186,10 @@ p.account a {
 	color: #F50;
 	border: solid 1px #F50;
 	text-decoration: none;
+	    -webkit-transition-duration: 0.25s;
+   -moz-transition-duration: 0.25s;
+     -o-transition-duration: 0.25s;
+     transition-duration: 0.25s;
 }
 
 
