@@ -1,4 +1,4 @@
-body {
+ibody {
 	background-color: #E9E9E9;
 }
 
@@ -150,10 +150,13 @@ p.account a {
 	color: #fff;
 	font-size: 34px;
 	line-height: 1;
+	transition-duration: 1s;
 }
 
 .logo:hover {
 	color: white;
+	transform:scale(1.4);
+	transition-duration: 1s;
 }
 
 #topbar h2 {
@@ -292,6 +295,10 @@ p.account a {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+.image:hover {
+	transform: scale(1.4);
+	transition-duration: 1s;
 }
 
 .thumb {
