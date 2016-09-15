@@ -1,5 +1,5 @@
-ibody {
-	background-color: #E9E9E9;
+body {
+	background-color: rgba(149, 165, 166,1.0);
 }
 
 input:focus {
@@ -197,6 +197,7 @@ p.account a {
 
 
 #musicfeed h1{
+	color: #F50;
 	margin:0;
 	padding:0;
 	margin-top: 20px;
@@ -204,7 +205,7 @@ p.account a {
 	font-size: 15px;
 	padding-bottom: 20px;
 	letter-spacing: 1px;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid #f50;
 }
 
 .music,
