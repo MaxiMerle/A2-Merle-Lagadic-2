@@ -6,8 +6,6 @@ session_start();
 
 
 
-
-
 $MailCheck = isEmailAvailable($db, $_POST['email']);
 $NameCheck = isUsernameAvailable($db, $_POST['username']);
 if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
