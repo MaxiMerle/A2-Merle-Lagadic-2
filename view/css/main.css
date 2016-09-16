@@ -147,7 +147,7 @@ p.account a {
 }
 
 .logo {
-	color: #fff;
+	color: orange;
 	font-size: 34px;
 	line-height: 1;
 	transition-duration: 1s;
@@ -250,7 +250,7 @@ p.account a {
 
 .music p.title {
 	color: #646464;
-	margin-bottom: 0;
+	margin-bottom:0;
 }
 
 .music .date {
@@ -422,4 +422,8 @@ p.account a {
 	width: 100%;
 	font-family: monospace;
 	font-size: 10px; /* reduced font size */
+}
+
+.title {
+	text-align:center;
 }

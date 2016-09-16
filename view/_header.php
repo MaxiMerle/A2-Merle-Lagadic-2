@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>SoundCloud</title>
+	<title>SoundSession</title>
 	<meta name="description" content="Exercice d'initiation Git">
 	<meta name="author" content="Adrien Kühn">
 	<link href="favicon.png" rel="icon">
