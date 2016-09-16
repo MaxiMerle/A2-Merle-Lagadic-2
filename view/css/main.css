@@ -1,5 +1,5 @@
 body {
-	background-color: #E9E9E9;
+	background-color: rgba(149, 165, 166,1.0);
 }
 
 input:focus {
@@ -101,7 +101,7 @@ input:focus {
 }
 
 #logbox .form-submit input[type="submit"]:active {
-	margin-top: 3px;
+	margin-top: 5px;
 	border-bottom: 2px solid #2c3e50;
 	transition:all 0.1s linear;
 }
@@ -150,10 +150,13 @@ p.account a {
 	color: #fff;
 	font-size: 34px;
 	line-height: 1;
+	transition-duration: 1s;
 }
 
 .logo:hover {
 	color: white;
+	transform:scale(1.4);
+	transition-duration: 1s;
 }
 
 #topbar h2 {
@@ -186,10 +189,15 @@ p.account a {
 	color: #F50;
 	border: solid 1px #F50;
 	text-decoration: none;
+	    -webkit-transition-duration: 0.25s;
+   -moz-transition-duration: 0.25s;
+     -o-transition-duration: 0.25s;
+     transition-duration: 0.25s;
 }
 
 
 #musicfeed h1{
+	color: #F50;
 	margin:0;
 	padding:0;
 	margin-top: 20px;
@@ -197,7 +205,7 @@ p.account a {
 	font-size: 15px;
 	padding-bottom: 20px;
 	letter-spacing: 1px;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid #f50;
 }
 
 .music,
@@ -288,6 +296,10 @@ p.account a {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+.image:hover {
+	transform: scale(1.4);
+	transition-duration: 1s;
 }
 
 .thumb {
