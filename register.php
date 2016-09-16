@@ -3,7 +3,7 @@ require('config/config.php');
 require('model/functions.fn.php');
 
 /*===============================
-	Register
+	---
 ===============================*/
 
 include 'view/_header.php';
